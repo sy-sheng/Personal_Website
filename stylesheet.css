@@ -1,0 +1,288 @@
+
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Head & Navigation Bar & Search Bar*/
+/*Fix header on the top on the screen*/
+.header{
+    position: fixed;
+}
+/*Build up the flexbox*/
+.header-bar{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/*Container01: The Name*/
+#logo{
+    color:black;
+    font-family: inherit;
+}
+#logo:hover{
+    color:black;
+    text-decoration:none;
+}
+.main-logo{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    display: block;
+    text-align: bottom;
+}
+
+/*Container02: Navigation Bar*/
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    display:block;
+}
+
+.navigationbar{
+    list-style-type: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    text-align: bottom;
+}
+
+.navbar{
+    float: left;
+}
+
+.navbar a{
+    display: block;
+    color: black;
+    font-family: inherit;
+    text-align: bottom;
+    padding-bottom: 10px;
+    padding-top:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #142C8B;
+    color: white;
+    text-decoration: none;
+}
+
+/*Timeline Display*/
+.dropdown{
+    position:relative;
+    display: block;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    color: #3a3a3a;
+    background-color: #ffffff;
+    width:100%;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/*Flexbox for years*/
+.years{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+}
+.year-detail{
+    text-align:center;
+    list-style-type:none;
+    flex-grow: 1;
+    padding:0;
+    margin:0;
+    background:#ffff00;
+}
+.year-detail a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size:14px;
+    text-decoration:none;
+    color:#142C8B;
+    padding-left:70px;
+    padding-right:70px;
+    padding-top:2px;
+    padding-bottom: 2px;
+
+}
+.year-detail a:hover{
+    background-color:#142C8B;
+    color: #ffffff;
+}
+/*Flexbox for experience*/
+.div-for-flex{
+    display:flex;
+    flex-direction:row;
+}
+
+.experience{
+    flex-grow: 1;
+    flex:1;
+    list-style-type: none;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:0;
+    padding-right:0;
+    margin-left:0;
+    margin-right:0;
+}
+
+.experience:hover{
+    background-color:#ffffff;
+    border-bottom-color: #3a3a3a;
+
+}
+
+.experience a{
+    font-family: arial;
+    color:#3a3a3a;
+    text-decoration:none;
+    display:block;
+    padding-left:10px;
+}
+
+.experience a:hover{
+    color: white;
+    background-color:#142C8B;
+}
+
+
+.lists{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+/*Gallery*/
+.gallery{
+    margin: 40px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-gap: 10px;
+}
+
+.project{
+    width: 350px;
+    margin-top: 5px;
+}
+
+.pic{
+    width: 350px;
+    border-top: 1px solid #3a3a3a;
+    border-bottom: 2px solid #3a3a3a;
+}
+
+.project_title{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color:#142C8B;
+}
+
+.project_content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7e7e7e;
+}
+/*
+.timeline{
+    display: flex;
+    font-family: inherit;
+    flex-wrap: nowrap;
+}
+
+.container{
+    flex-grow:1;
+    margin:0;
+    padding:0;
+}
+
+.container h1{
+    background-color:#eaeaea
+}
+
+.overview{
+    flex-grow:1;
+    font-family:inherit;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.years{
+    position:relative;
+    display:inline-block;
+    flex-grow:1;
+    font-family:Arial;
+    font-size:14px;
+    list-style-type: none;
+    text-align:center;
+    font-weight: 700;
+    color:#ffffff;
+    background-color:#eaeaea;
+    padding-left:0;
+    padding-right:0;
+    padding-top:0;
+    padding-bottom:0;
+    margin: 0;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color: #4d4d4d;
+    box-shadow: 0px 8px 16px 0px;
+    padding: 12px 16px;
+    z-index:1;
+}
+.years:hover .dropdown-content{
+    display:block;
+
+}
+
+.years a{
+    color: #ffffff;
+    text-decoration:none;
+}
+
+.years a:hover{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #4d4d4d;
+}
+
+.lists{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    text-align:left;
+}
+
+.experience{
+    font-family:Arial;
+    list-style-type:none; 
+    display: block;
+    padding-left:5px;
+    padding-right:0;
+    padding-top:2px;
+    padding-bottom:2px;
+    text-align: left;
+}
+*/
