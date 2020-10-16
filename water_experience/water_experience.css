@@ -18,6 +18,7 @@ html{
 #logo{
     color:black;
     font-family: inherit;
+    text-decoration:none;
 }
 #logo:hover{
     color:black;
