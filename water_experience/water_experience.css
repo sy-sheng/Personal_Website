@@ -99,15 +99,26 @@ nav{
     text-align:center;
     list-style-type:none;
     flex-grow: 1;
+    padding:0;
+    margin:0;
     background:#ffff00;
-    color: #142C8B;
 }
+.year-detail a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size:14px;
+    text-decoration:none;
+    color:#142C8B;
+    padding-left:70px;
+    padding-right:70px;
+    padding-top:2px;
+    padding-bottom: 2px;
 
-.year-detail:hover{
+}
+.year-detail a:hover{
+    background-color:#142C8B;
     color: #ffffff;
-    background-color:#142C8B;   
 }
-
 /*Flexbox for experience*/
 .div-for-flex{
     display:flex;
@@ -121,16 +132,18 @@ nav{
     font-family: arial;
     font-size: 12px;
     font-weight: 300;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left:0;
     padding-right:0;
-    /* margin-left:0;
-    margin-right:0; */
+    margin-left:0;
+    margin-right:0;
 }
 
 .experience:hover{
     background-color:#ffffff;
+    border-bottom-color: #3a3a3a;
+
 }
 
 .experience a{
@@ -152,7 +165,6 @@ nav{
     padding:0;
     margin:0;
 }
-
 /* water experience */
 #name{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
