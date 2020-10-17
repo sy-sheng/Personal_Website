@@ -209,8 +209,11 @@ nav{
     font-size: 14px;
     font-weight: 500;
     color: #7a7a7a;
-    margin: 2px;
-    width: 50%;
+    margin: 0px;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-style: solid;
+
 }
 .describe:hover{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
